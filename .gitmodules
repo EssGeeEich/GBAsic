@@ -1,0 +1,10 @@
+
+[submodule "deps/gba-tools"]
+	path = deps/gba-tools
+	url = https://github.com/devkitPro/gba-tools
+[submodule "deps/crtls"]
+	path = deps/crtls
+	url = https://github.com/devkitPro/devkitarm-crtls
+[submodule "deps/libgba"]
+	path = deps/libgba
+	url = https://github.com/devkitPro/libgba.git
