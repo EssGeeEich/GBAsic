@@ -6,14 +6,37 @@ This is for all intents and purposes a project template and is not aimed towards
 
 I have found this to be the best compromise for GBA development in my case.
 
-# Installation (Fedora Linux)
+# Installation
+
+## Requirements (Fedora / WSL Fedora)
 
 ```
-sudo dnf install arm-none-eabi-binutils-cs arm-none-eabi-gcc-cs arm-none-eabi-gcc-cs-c++ arm-none-eabi-newlib
+sudo dnf install make git gcc arm-none-eabi-binutils-cs arm-none-eabi-gcc-cs arm-none-eabi-gcc-cs-c++ arm-none-eabi-newlib
+```
+
+## Requirements (Ubuntu / WSL Ubuntu)
+```
+sudo apt install build-essential git gcc-arm-none-eabi binutils-arm-none-eabi libnewlib-arm-none-eabi libnewlib-dev libstdc++-arm-none-eabi-dev libstdc++-arm-none-eabi-newlib
+```
+
+## Clone
+```
 git clone --recurse-submodules https://github.com/EssGeeEich/GBAsic.git
 cd GBAsic
-make
 ```
+
+## Build
+```
+make -j
+```
+
+## Development
+It is suggested to find an appropriate IDE for development.
+
+For convenience, a VSCode workspace is provided.
+To open VSCode in WSL, you must install vscode in WSL (command "code" must exist); Afterwards, you can open `wsl_open_workspace.bat` to open the VSCode workspace in the default WSL distribution.
+
+You can adapt this batch file to any other WSL distribution.
 
 # RAM
 

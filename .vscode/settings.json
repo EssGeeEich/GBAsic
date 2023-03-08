@@ -1,0 +1,9 @@
+{
+    "C_Cpp.default.defines": [
+        "__INTELLISENSE"
+    ],
+    "C_Cpp.default.cppStandard": "c++11",
+    "C_Cpp.default.cStandard": "gnu11",
+    "C_Cpp.default.intelliSenseMode": "gcc-arm",
+    "C_Cpp.default.compilerPath": "arm-none-eabi-gcc"
+}

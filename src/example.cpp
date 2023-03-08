@@ -1,17 +1,14 @@
-#include <stdint.h>
 #include <gba_systemcalls.h>
 #include <gba_interrupt.h>
 #include <gba_video.h>
 #include "binary_file.h"
 
-uint16_t *fb = reinterpret_cast<uint16_t*>(0x6000000);
 const int xsz = 240;
 const int ysz = 160;
 
 int main() {
 	irqInit();
 	irqEnable(IRQ_VBLANK);
-
 	
 	REG_DISPCNT = MODE_3 | BG2_ENABLE;
 	REG_DISPCNT &= ~BACKBUFFER;
